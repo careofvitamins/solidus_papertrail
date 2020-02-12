@@ -1,6 +1,6 @@
 module Spree
   Order.class_eval do
     include Spree::Versionable
-    has_paper_trail class_name: 'Spree::OrderVersion'
+    has_paper_trail class_name: 'Spree::OrderVersion', on: %i[create update destroy]
   end
 end
