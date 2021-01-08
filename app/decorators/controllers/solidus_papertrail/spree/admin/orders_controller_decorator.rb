@@ -3,7 +3,7 @@ module SolidusPapertrail
     module Admin
       module OrdersControllerDecorator
         def versions
-          @order = Spree::Order.find_by_number params[:id]
+          @order = ::Spree::Order.find_by_number params[:id]
 
           @versions = VersionsAdapter.create([@order])
 
