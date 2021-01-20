@@ -30,9 +30,9 @@ Gem::Specification.new do |s|
     s.metadata["source_code_uri"] = s.homepage if s.homepage
   end
 
-  s.add_dependency 'paper_trail', '~> 9.2'
+  s.add_dependency 'paper_trail', '~> 11'
   s.add_dependency 'solidus_core', ['>= 1.0', '< 3']
-  s.add_dependency 'solidus_support', '~> 0.5'
+  s.add_dependency 'solidus_support', '~> 0.7'
 
   s.add_development_dependency 'solidus_dev_support'
 end
